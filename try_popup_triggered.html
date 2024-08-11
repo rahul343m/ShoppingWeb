@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="try_popup_triggered_css.css">
+</head>
+<body>
+    <div class="containerpopup"> 
+        <button type="button" class="btn" onclick="openpopup()">Submit</button>
+        <div class="popup" id="popup">
+          <!--<img>-->
+          <h2>Thank you</h2>
+          <p>Your details are updated</p>
+          <button type="button" onclick="closepopup()">nice</button>
+          </div>
+        </div>
+<script>
+let popup = document.getElementById("popup");
+function openpopup(){
+    popup.classList.add("open-popup");
+}
+function closepopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+</html>
